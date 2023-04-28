@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     
     var number: Int = 0
     
-    @IBOutlet var label: UILabel!
+    @IBOutlet var countlabel: UILabel!
+    @IBOutlet var resultlabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,11 @@ class ViewController: UIViewController {
     
     @IBAction func plus() {
         number = number + 1
-        label.text = String(number)
+        countlabel.text = String(number)
+        
+        if number == 20 {
+            resultlabel.text = "たいじした！"
+        }
     }
 
 

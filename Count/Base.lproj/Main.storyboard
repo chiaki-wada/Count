@@ -29,9 +29,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHd-uH-Pqj">
                                 <rect key="frame" x="149" y="659" width="95" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="まめ">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="plus" destination="BYZ-38-t0r" eventType="touchUpInside" id="15V-Gm-sAJ"/>
@@ -56,6 +59,7 @@
                         <color key="backgroundColor" red="0.68142637049999999" green="0.71114695439999998" blue="0.21667234939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="circleButton" destination="vHd-uH-Pqj" id="LGM-QX-H06"/>
                         <outlet property="countlabel" destination="B6C-gh-kNU" id="ALW-rQ-4wl"/>
                         <outlet property="resultlabel" destination="6EN-GT-iII" id="jCc-dh-JmK"/>
                     </connections>

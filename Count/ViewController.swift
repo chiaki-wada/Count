@@ -13,10 +13,12 @@ class ViewController: UIViewController {
     
     @IBOutlet var countlabel: UILabel!
     @IBOutlet var resultlabel: UILabel!
+    @IBOutlet var circleButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        circleButton.layer.cornerRadius = 42
     }
     
     @IBAction func plus() {
